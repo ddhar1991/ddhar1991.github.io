@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dipankar Dhar — Role</title>
+  <meta name="description" content="Short pitch: who you are, what you do, and the value you bring." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0c10; --fg:#eaf0f6; --muted:#aab4c0; --accent:#6ee7b7; --card:#151821; --border:#222631; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:1040px; padding:24px; margin:0 auto; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:12px 0 24px; }
+    .brand { font-weight:700; letter-spacing:0.2px; }
+    nav a { margin-left:16px; color:var(--fg); opacity:0.85; }
+    .hero { display:grid; grid-template-columns:1.2fr 0.8fr; gap:32px; padding:24px 0 40px; align-items:center; }
+    .hero h1 { font-size:40px; line-height:1.15; margin:0 0 12px; }
+    .hero p { color:var(--muted); margin:0 0 16px; }
+    .btn { display:inline-block; background:var(--accent); color:#0b0c10; padding:10px 16px; border-radius:8px; font-weight:600; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px; }
+    .grid { display:grid; gap:16px; }
+    .projects { grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); }
+    .project h3 { margin:8px 0 8px; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0; }
+    .tag { font-size:12px; padding:4px 8px; background:#0f1220; border:1px solid var(--border); border-radius:999px; color:var(--muted); }
+    .section-title { margin:8px 0 12px; font-size:22px; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    footer { margin:40px 0 20px; color:var(--muted); font-size:14px; }
+    img.avatar { width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid var(--border); }
+    @media (max-width:840px) {
+      .hero { grid-template-columns:1fr; }
+      nav { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">Dipankar Dhar</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hi, I’m Dipankar Dhar — .NET Developer/Technical Lead </h1>
+        <p>I help X do Y by Z. Recently: key achievement with metric/result.</p>
+        <p>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          &nbsp;&nbsp;<a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          &nbsp;·&nbsp;<a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <img class="avatar" src="original.png" alt="Headshot of Dipankar Dhar">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <h3>Project A — concise value</h3>
+          <p>What it does, who it’s for, your role. Outcome with metric if possible.</p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Node</span><span class="tag">PostgreSQL</span>
+          </div>
+          <p><a href="#" target="_blank" rel="noopener">Live demo</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+        </article>
+        <article class="card project">
+          <h3>Project B — concise value</h3>
+          <p>Brief summary and impact. 1–2 sentences max.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Dash</span>
+          </div>
+          <p><a href="#" target="_blank" rel="noopener">Live demo</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+        </article>
+        <article class="card project">
+          <h3>Project C — concise value</h3>
+          <p>What changed because of your work; quantify if you can.</p>
+          <div class="tags">
+            <span class="tag">Figma</span><span class="tag">UX</span>
+          </div>
+          <p><a href="#" target="_blank" rel="noopener">Case study</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" style="margin-top:24px;">
+      <h2 class="section-title">Experience & Skills</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Company — Role (Dates)</h3>
+          <ul>
+            <li>Delivered X resulting in Y% improvement in Z.</li>
+            <li>Led N-person effort; tools/stack: A, B, C.</li>
+          </ul>
+          <h3>Company — Role (Dates)</h3>
+          <ul>
+            <li>Built/Designed/Analyzed … outcome … metric.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Core Skills</h3>
+          <p>Languages/Frameworks/Tools: keep to 10–14 relevant items.</p>
+          <h3>Highlights</h3>
+          <ul>
+            <li>Certifications, awards, talks, press.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:24px;">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>1–2 short paragraphs on your background, interests, and what you’re looking for next.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:24px;">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:ddhar1991@gmail.com">ddhar1991@gmail.com</a> · Open to roles in X/Y/Z.</p>
+        <!-- Simple form using Formspree (replace YOUR_FORM_ID) -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>Your email<br><input type="email" name="email" required style="width:100%; padding:8px; margin:6px 0;"></label>
+          <label>Message<br><textarea name="message" rows="4" required style="width:100%; padding:8px; margin:6px 0;"></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Dipankar Dhar · Built with HTML/CSS · <a href="/privacy.html">Privacy</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
